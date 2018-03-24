@@ -1,0 +1,15 @@
+sudo: false
+
+# Build only master & PRs
+branches:
+  only:
+    - master
+    - /^greenkeeper/.*$/
+
+language: node_js
+
+node_js:
+  - "6"
+
+script:
+  - git diff --name-only --diff-filter=ACM $TRAVIS_BRANCH...HEAD
