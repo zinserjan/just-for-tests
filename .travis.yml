@@ -1,5 +1,4 @@
 sudo: false
-
 # Build only master & PRs
 branches:
   only:
