@@ -9,4 +9,4 @@ branches:
 
 # test scripts
 test_script:
-  - ps: git diff --name-only --diff-filter=ACM $env:APPVEYOR_REPO_BRANCH...HEAD
+  - ps: git diff --name-only $env:APPVEYOR_REPO_BRANCH...HEAD
