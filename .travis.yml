@@ -11,4 +11,4 @@ node_js:
   - "6"
 
 script:
-  - git diff --name-only --diff-filter=ACM HEAD...$TRAVIS_BRANCH
+  - git diff --name-only --diff-filter=ACM $TRAVIS_BRANCH...HEAD
