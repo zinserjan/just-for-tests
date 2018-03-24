@@ -1,0 +1,12 @@
+# Don't actually build.
+build: off
+
+# Build only master & PRs
+branches:
+  only:
+    - master
+    - /^greenkeeper/.*$/
+
+# test scripts
+test_script:
+  - ps: git diff --name-only --diff-filter=ACM $env:APPVEYOR_REPO_BRANCH...HEAD
